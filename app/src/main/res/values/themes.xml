@@ -2,20 +2,20 @@
     <!-- Base application theme. -->
     <style name="Theme.Asd" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/main_blue</item>
-        <item name="colorPrimaryVariant">@color/True_blue</item>
-        <item name="colorOnPrimary">@color/True_white</item>
+        <item name="colorPrimary">@color/blue2</item>
+        <item name="colorPrimaryVariant">@color/blue1</item>
+        <item name="colorOnPrimary">@color/True_black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/True_red</item>
-        <item name="colorSecondaryVariant">@color/True_green</item>
+        <item name="colorSecondary">@color/blue2</item>
+        <item name="colorSecondaryVariant">@color/blue2</item>
         <item name="colorOnSecondary">@color/True_black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">#2D5DD8</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
         <!-- Customize your theme here. -->
 
 <!--    Font Styles-->
-
-    </style>
     <style name="Text1_bold">
         <item name="fontFamily">@font/pretendard_bold</item>
         <item name="android:textSize">24dp</item>
