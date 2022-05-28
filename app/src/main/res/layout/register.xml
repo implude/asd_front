@@ -15,14 +15,16 @@
         app:layout_constraintBottom_toBottomOf="parent">
         <TextView
             android:id="@+id/RegisterTitle"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.23"
+            app:layout_constraintHeight_percent="0.25"
             android:text="ASD 회원가입"
             android:textColor="@color/blue2"
             android:gravity="center|center_vertical"
             style="@style/Text1_bold"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
