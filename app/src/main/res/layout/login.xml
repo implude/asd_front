@@ -5,11 +5,9 @@
     android:background="@color/Background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="300dp"
+        android:layout_height="383dp"
         android:background="@drawable/container"
-        app:layout_constraintWidth_percent="0.8"
-        app:layout_constraintHeight_percent="0.5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -29,9 +27,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="66dp"
             android:foregroundGravity="center_vertical|center"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.6"
             app:layout_constraintWidth_percent="0.75"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -85,38 +81,40 @@
                 <TextView
                     android:id="@+id/find_id"
                     style="@style/Text5_regular"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="14dp"
                     android:clickable="true"
                     android:gravity="center|center_vertical"
                     android:text="아이디 찾기"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toLeftOf="@id/find_pw"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/find_pw"
                     style="@style/Text5_regular"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="14dp"
                     android:clickable="true"
                     android:gravity="center|center_vertical"
                     android:text="비밀번호 찾기"
                     app:layout_constraintLeft_toRightOf="@id/find_id"
                     app:layout_constraintRight_toLeftOf="@id/register"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/togo_side"/>
 
                 <TextView
                     android:id="@+id/register"
                     style="@style/Text5_regular"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="14dp"
                     android:clickable="true"
                     android:gravity="center|center_vertical"
                     android:text="회원가입"
                     app:layout_constraintLeft_toRightOf="@id/find_pw"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/togo_side"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
