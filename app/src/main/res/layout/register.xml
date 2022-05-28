@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Background">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/RegisterContainer"
+        android:layout_width="300dp"
+        android:layout_height="513dp"
+        android:background="@drawable/container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/RegisterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.23"
+            android:text="ASD 회원가입"
+            android:textColor="@color/blue2"
+            android:gravity="center|center_vertical"
+            style="@style/Text1_bold"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:foregroundGravity="center_vertical|center"
+            app:layout_constraintHeight_percent="0.63"
+            app:layout_constraintWidth_percent="0.75"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/RegisterTitle">
+            <EditText
+                android:id="@+id/RegisterName"
+                style="@style/Text5_light"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:backgroundTint="@color/gray2"
+                android:hint="이름"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/RegisterId"
+                style="@style/Text5_light"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:backgroundTint="@color/gray2"
+                android:hint="아이디"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/RegisterName"/>
+            <EditText
+                android:id="@+id/RegisterPw"
+                style="@style/Text5_light"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:backgroundTint="@color/gray2"
+                android:hint="비밀번호"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/RegisterId" />
+            <EditText
+                android:id="@+id/RegisterPw2"
+                style="@style/Text5_light"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:backgroundTint="@color/gray2"
+                android:hint="비밀번호 재입력"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/RegisterPw" />
+            <EditText
+                android:id="@+id/RegisterPhoneNumber"
+                style="@style/Text5_light"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:backgroundTint="@color/gray2"
+                android:hint="전화번호"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/RegisterPw2" />
+            <EditText
+                android:id="@+id/RegisterVerificationCode"
+                style="@style/Text5_light"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:backgroundTint="@color/gray2"
+                android:hint="인증번호"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/RegisterPhoneNumber" />
+            <Button
+                android:id="@+id/RegisterButton"
+                style="@style/Text4_bold"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/login_register_button"
+                android:gravity="center_vertical|center"
+                android:text="회원가입"
+                android:textColor="@color/True_white"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/RegisterVerificationCode" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
