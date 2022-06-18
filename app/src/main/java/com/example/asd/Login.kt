@@ -13,15 +13,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
 
-        val togo_find_id = findViewById<TextView>(R.id.find_id)
-        val togo_find_pw = findViewById<TextView>(R.id.find_pw)
-        val togo_register = findViewById<TextView>(R.id.register)
 
-//      회원가입 페이지 이동
-        togo_register.setOnClickListener {
-            val go_register = Intent(this, Register::class.java)
-            startActivity(go_register)
-        }
     }
 }
 
