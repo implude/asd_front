@@ -13,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
+import kotlin.reflect.typeOf
 
 class Main : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,19 +22,16 @@ class Main : AppCompatActivity() {
 
         val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
 
-        val button_on = findViewById<Button>(R.id.buton)
-        val button_off = findViewById<Button>(R.id.button_off)
-
-        // Click listener for button widget
-        button_on.setOnClickListener {
+        // Turn on DND
+        fun onDND(){
             if (checkNotificationPolicyAccess(notificationManager)){
                 notificationManager.onDOD()
                 toast("Do Not Disturb turned on.")
             }
         }
 
-        // Click listener for button widget
-        button_off.setOnClickListener{
+        // Turn off DND
+        fun offDND(){
             if (checkNotificationPolicyAccess(notificationManager)){
                 notificationManager.offDOD()
                 toast("Do Not Disturb turned off")
@@ -41,8 +39,7 @@ class Main : AppCompatActivity() {
         }
 
     }
-
-
+    //DND기능
     // Method to check notification policy access status
     private fun checkNotificationPolicyAccess(notificationManager:NotificationManager):Boolean{
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -74,20 +71,8 @@ class Main : AppCompatActivity() {
         }
     }
 
-
-    // Extension function to set alarms only interruption filter
-    fun NotificationManager.onAlarmDOD(){
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            this.setInterruptionFilter(NotificationManager.INTERRUPTION_FILTER_ALARMS)
-        }
-    }
-
-
-
     // Extension function to show toast message
     fun Context.toast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
-
-
     }
