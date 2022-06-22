@@ -26,6 +26,8 @@ class Login : AppCompatActivity() {
 //            .addConverterFactory(GsonConverterFactory.create()).build();
 //        val service = retrofit.create(User_identification_router::class.java);
 
+
+        // check
         findViewById<Button>(R.id.login_button).setOnClickListener{
             val intent = Intent(this@Login, Main::class.java)
             startActivity(intent)
