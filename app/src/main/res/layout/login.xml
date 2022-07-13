@@ -49,7 +49,7 @@
             android:hint="아이디를 입력해주세요."
             android:textColorHint="@color/gray2"
             android:maxLines="1"
-            android:background="@drawable/input_id_pw"
+            android:background="@drawable/find_id_input"
             app:layout_constraintHeight_percent="0.117"
             app:layout_constraintTop_toBottomOf="@id/login_icon"/>
         <EditText
@@ -64,7 +64,7 @@
             android:inputType="textPassword"
             android:textColorHint="@color/gray2"
             android:maxLines="1"
-            android:background="@drawable/input_id_pw"
+            android:background="@drawable/find_id_input"
             app:layout_constraintHeight_percent="0.117"
             app:layout_constraintTop_toBottomOf="@id/login_inputid"/>
         <Button
@@ -80,8 +80,8 @@
             app:layout_constraintHeight_percent="0.117"
             app:layout_constraintTop_toBottomOf="@id/login_inputpw"/>
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
             app:layout_constraintHeight_percent="0.035"
             android:layout_marginTop="20dp"
             android:gravity="center"
@@ -94,7 +94,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="회원가입"
-                android:textSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="20sp"
                 android:textColor="@color/gray2"
                 android:fontFamily="@font/pretendard_semibold"/>
             <View
@@ -107,7 +109,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="아이디찾기"
-                android:textSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="20sp"
                 android:textColor="@color/gray2"
                 android:fontFamily="@font/pretendard_semibold"
                 android:layout_marginLeft="15dp"/>
@@ -121,7 +125,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="비밀번호찾기"
-                android:textSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="20sp"
                 android:textColor="@color/gray2"
                 android:fontFamily="@font/pretendard_semibold"
                 android:layout_marginLeft="15dp"/>
