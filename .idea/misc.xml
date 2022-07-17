@@ -4,7 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/container.xml" value="0.4" />
+<<<<<<< HEAD
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/activity_main.xml" value="0.1" />
+=======
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/find_id.xml" value="0.2" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/find_id_button.xml" value="0.21" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/find_id_input.xml" value="0.2" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/input_id_pw.xml" value="0.2" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/loginbutton.xml" value="0.2" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_id.xml" value="0.33" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_login.xml" value="0.33" />
+>>>>>>> f3f1f6bd0d3d88ac756f70c03bc413f03f83fe0e
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/main.xml" value="0.287109375" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/register.xml" value="0.38385416666666666" />
