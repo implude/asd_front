@@ -7,18 +7,30 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
-import android.util.Log
-import android.widget.Button
-import android.widget.TextView
+import android.widget.ImageButton
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet
-import kotlin.reflect.typeOf
 
 class Main : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
+
+        val navigationbar_book = findViewById<ImageButton>(R.id.navigation_bar_book)
+        val navigationbar_home = findViewById<ImageButton>(R.id.navigation_bar_home)
+        val navigationbar_info = findViewById<ImageButton>(R.id.navigation_bar_info)
+
+        navigationbar_book.setOnClickListener {
+            val intent = Intent(this@Main, Book::class.java)
+            startActivity(intent)
+        }
+        navigationbar_home.setOnClickListener {
+            val intent = Intent(this@Main, Main::class.java)
+            startActivity(intent)
+        }
+        navigationbar_info.setOnClickListener {
+            val intent = Intent(this@Main, Info::class.java)
+            startActivity(intent)
+        }
 
         val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
 

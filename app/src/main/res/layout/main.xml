@@ -2,5 +2,111 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Background">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_management"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.37"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/main_todolist">
+        <TextView
+            android:id="@+id/main_management_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학습도구 관리"
+            android:theme="@style/Text4_semibold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_management_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_management"
+            app:layout_constraintTop_toBottomOf="@id/main_management_text"
+            app:layout_constraintBottom_toBottomOf="parent">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_todolist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.32"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_management"
+        app:layout_constraintBottom_toTopOf="@+id/main_navigation_bar">
+        <TextView
+            android:id="@+id/main_todolist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="투두리스트"
+            android:theme="@style/Text4_semibold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_todolist_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/main_todolist"
+            android:layout_marginTop="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_todolist_text"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_navigation_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:elevation="7dp"
+        android:background="@drawable/navigation_bar"
+        app:layout_constraintTop_toBottomOf="@id/main_todolist"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/navigation_bar_book"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:background="@drawable/book"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/navigation_bar_home"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <ImageButton
+            android:id="@+id/navigation_bar_home"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:background="@drawable/home"
+            app:layout_constraintLeft_toRightOf="@id/navigation_bar_book"
+            app:layout_constraintRight_toLeftOf="@id/navigation_bar_info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/navigation_bar_info"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:background="@drawable/person"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/navigation_bar_home"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
