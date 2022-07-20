@@ -42,6 +42,11 @@ class Login : AppCompatActivity() {
             val intent = Intent(this@Login, find_id::class.java)
             startActivity(intent)
         }
+
+        findViewById<TextView>(R.id.login_register).setOnClickListener{
+            val intent = Intent(this@Login, SignUp::class.java)
+            startActivity(intent)
+        }
     }
 }
 
