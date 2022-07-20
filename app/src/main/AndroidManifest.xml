@@ -30,6 +30,8 @@
             android:name=".SignUp"
             android:exported="true">
         </activity>
+        <activity android:name=".Calendar"></activity>
+        <activity android:name=".Info"></activity>
     </application>
 
 </manifest>

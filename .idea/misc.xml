@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/calendar.xml" value="0.185" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/calendar_calendar.xml" value="0.185" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/container.xml" value="0.4" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/find_id.xml" value="0.2" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/find_id_button.xml" value="0.21" />
@@ -18,8 +19,13 @@
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/navigation_bar.xml" value="0.3325" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/person.xml" value="0.3325" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/signup_border.xml" value="0.185" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/slide_left_enter.xml" value="0.185" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/slide_left_exit.xml" value="0.185" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/slide_right_enter.xml" value="0.185" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/slide_right_exit.xml" value="0.185" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/book.xml" value="0.29270833333333335" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/calendar.xml" value="0.39895833333333336" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_id.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_login.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/info.xml" value="0.29270833333333335" />

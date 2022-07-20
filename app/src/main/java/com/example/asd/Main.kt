@@ -16,20 +16,23 @@ class Main : AppCompatActivity() {
         setContentView(R.layout.main)
 
         val navigationbar_book = findViewById<ImageButton>(R.id.navigation_bar_book)
-        val navigationbar_home = findViewById<ImageButton>(R.id.navigation_bar_home)
+//        val navigationbar_home = findViewById<ImageButton>(R.id.navigation_bar_home)
         val navigationbar_info = findViewById<ImageButton>(R.id.navigation_bar_info)
 
         navigationbar_book.setOnClickListener {
-            val intent = Intent(this@Main, Book::class.java)
+            val intent = Intent(this@Main, Calendar::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_left_enter,R.anim.slide_left_exit)
         }
-        navigationbar_home.setOnClickListener {
-            val intent = Intent(this@Main, Main::class.java)
-            startActivity(intent)
-        }
+//        navigationbar_home.setOnClickListener {
+//            val intent = Intent(this@Main, Main::class.java)
+//            startActivity(intent)
+//        }
         navigationbar_info.setOnClickListener {
             val intent = Intent(this@Main, Info::class.java)
             startActivity(intent)
+
+            overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
         }
 
         val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
