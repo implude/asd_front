@@ -97,6 +97,5 @@
             android:textColor="@color/True_white"
             style="@style/Text4_bold"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
