@@ -25,12 +25,14 @@
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/slide_left_exit.xml" value="0.185" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/slide_right_enter.xml" value="0.185" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/slide_right_exit.xml" value="0.185" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/activity_edit_todo.xml" value="0.39895833333333336" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/book.xml" value="0.29270833333333335" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/calendar.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_id.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_login.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/info.xml" value="0.29270833333333335" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/item_todo_list.xml" value="0.39791666666666664" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/main.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/register.xml" value="0.38385416666666666" />
