@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import java.util.Calendar.YEAR
-import java.util.Calendar.getInstance
 
 class Calendar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +24,7 @@ class Calendar : AppCompatActivity() {
             overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
         }
         navigationbar_info.setOnClickListener {
-            val intent = Intent(this@Calendar, Info::class.java)
+            val intent = Intent(this@Calendar, setting::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
         }

@@ -29,7 +29,7 @@ class Main : AppCompatActivity() {
 //            startActivity(intent)
 //        }
         navigationbar_info.setOnClickListener {
-            val intent = Intent(this@Main, Info::class.java)
+            val intent = Intent(this@Main, setting::class.java)
             startActivity(intent)
 
             overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
