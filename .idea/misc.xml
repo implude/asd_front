@@ -3,22 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/calendar.xml" value="0.185" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/calendar_calendar.xml" value="0.185" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/calendar_dash_left.xml" value="0.3245" />
-=======
->>>>>>> dc9b20d34f46375534366cae82ebc6b3eab54710
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/container.xml" value="0.4" />
-<<<<<<< HEAD
-        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/activity_main.xml" value="0.1" />
-=======
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/find_id.xml" value="0.2" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/find_id_button.xml" value="0.21" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/find_id_input.xml" value="0.2" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/home.xml" value="0.3325" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.3325" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3325" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/input_id_pw.xml" value="0.2" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/loginbutton.xml" value="0.2" />
-<<<<<<< HEAD
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/main_management.xml" value="0.185" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/main_todolist.xml" value="0.185" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/drawable/navigation_bar.xml" value="0.3325" />
@@ -37,35 +33,21 @@
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_login.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/info.xml" value="0.29270833333333335" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/item_todo_list.xml" value="0.39791666666666664" />
-=======
-        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_id.xml" value="0.33" />
-        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/find_login.xml" value="0.33" />
->>>>>>> f3f1f6bd0d3d88ac756f70c03bc413f03f83fe0e
->>>>>>> dc9b20d34f46375534366cae82ebc6b3eab54710
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/login.xml" value="0.33" />
-        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/main.xml" value="0.287109375" />
+        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/main.xml" value="0.33" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/register.xml" value="0.38385416666666666" />
-<<<<<<< HEAD
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/setting.xml" value="0.25" />
         <entry key="..\:/2022_implude/asd/app/src/main/res/layout/signup.xml" value="0.39791666666666664" />
-=======
->>>>>>> dc9b20d34f46375534366cae82ebc6b3eab54710
+        <entry key="..\:/2022_implude/asd/app/src/main/res/layout/typography.xml" value="0.29375" />
         <entry key="..\:/asd1/app/src/main/res/drawable/container.xml" value="0.121" />
-        <entry key="..\:/asd1/app/src/main/res/drawable/find_id.xml" value="0.121" />
-        <entry key="..\:/asd1/app/src/main/res/drawable/find_id_input.xml" value="0.121" />
         <entry key="..\:/asd1/app/src/main/res/drawable/input_id_pw.xml" value="0.12" />
         <entry key="..\:/asd1/app/src/main/res/drawable/login_button.xml" value="0.121" />
         <entry key="..\:/asd1/app/src/main/res/drawable/login_register_button.xml" value="0.121" />
         <entry key="..\:/asd1/app/src/main/res/drawable/loginbutton.xml" value="0.12" />
-        <entry key="..\:/asd1/app/src/main/res/drawable/signup_border.xml" value="0.121" />
         <entry key="..\:/asd1/app/src/main/res/drawable/togo_side.xml" value="0.121" />
         <entry key="..\:/asd1/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
-        <entry key="..\:/asd1/app/src/main/res/layout/find_id.xml" value="0.2" />
         <entry key="..\:/asd1/app/src/main/res/layout/login.xml" value="0.264" />
-        <entry key="..\:/asd1/app/src/main/res/layout/main.xml" value="0.1" />
         <entry key="..\:/asd1/app/src/main/res/layout/register.xml" value="0.3376" />
-        <entry key="..\:/asd1/app/src/main/res/layout/signup.xml" value="0.264" />
         <entry key="..\:/asd1/app/src/main/res/layout/typography.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5173128338691071" />
         <entry key="app/src/main/res/layout/login.xml" value="0.22135416666666666" />
