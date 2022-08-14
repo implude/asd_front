@@ -20,6 +20,7 @@ class CalendarAdapter(private val dayList: ArrayList<String>):
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.calendar_cell, parent, false)
+
         return ItemViewHolder(view)
     }
 
