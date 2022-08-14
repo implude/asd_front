@@ -114,6 +114,10 @@ class Calendar : AppCompatActivity() {
 
         for(i in 1..41) {
             if(i <= dayOfWeek || i > (lastDay + dayOfWeek)){
+                //만약 일요일이 첫째날이 되버리면 일주일의 공백이 생긴 상태로 나오는 걸 방지
+                if (dayOfWeek == 7 && i < 8) {
+                    continue
+                }
                 dayList.add("")
             }
             else {
