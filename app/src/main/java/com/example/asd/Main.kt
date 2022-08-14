@@ -2,21 +2,42 @@ package com.example.asd
 
 import android.app.NotificationManager
 import android.content.Context
+import android.content.Context.NOTIFICATION_SERVICE
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.core.content.ContextCompat.getSystemService
+import androidx.core.content.ContextCompat.startActivity
+import io.socket.client.IO
+import io.socket.client.Socket
+import io.socket.client.Socket.EVENT_CONNECT
+import io.socket.emitter.Emitter
+import java.net.URISyntaxException
+
 
 class Main : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
+        val sharedPreference = getSharedPreferences("uuid", 0)
+        val editor  : SharedPreferences.Editor = sharedPreference.edit()
 
+        // uuid 내부저장 일치 여부 확인.
+        if (sharedPreference.getString("uuid", null) == null){
+            val intent = Intent(this@Main, setting::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
+        }
+
+        // Navigation bar control
         val navigationbar_book = findViewById<ImageButton>(R.id.navigation_bar_book)
-//        val navigationbar_home = findViewById<ImageButton>(R.id.navigation_bar_home)
         val navigationbar_info = findViewById<ImageButton>(R.id.navigation_bar_info)
 
         navigationbar_book.setOnClickListener {
@@ -24,10 +45,6 @@ class Main : AppCompatActivity() {
             startActivity(intent)
             overridePendingTransition(R.anim.slide_left_enter,R.anim.slide_left_exit)
         }
-//        navigationbar_home.setOnClickListener {
-//            val intent = Intent(this@Main, Main::class.java)
-//            startActivity(intent)
-//        }
         navigationbar_info.setOnClickListener {
             val intent = Intent(this@Main, setting::class.java)
             startActivity(intent)
@@ -35,6 +52,7 @@ class Main : AppCompatActivity() {
             overridePendingTransition(R.anim.slide_right_enter,R.anim.slide_right_exit)
         }
 
+        // DND part
         val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
 
         // Turn on DND
@@ -52,8 +70,8 @@ class Main : AppCompatActivity() {
                 toast("Do Not Disturb turned off")
             }
         }
-
     }
+
     //DND기능
     // Method to check notification policy access status
     private fun checkNotificationPolicyAccess(notificationManager:NotificationManager):Boolean{
@@ -91,3 +109,5 @@ class Main : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
     }
+
+

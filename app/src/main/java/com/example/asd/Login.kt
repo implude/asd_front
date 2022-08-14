@@ -18,15 +18,6 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
 
-        //우리 서버 주소
-//        val url = null
-
-//         retrofit2 server connection part. login, register etc ..
-//        val retrofit = Retrofit.Builder().baseUrl(url.toString())
-//            .addConverterFactory(GsonConverterFactory.create()).build();
-//        val service = retrofit.create(User_identification_router::class.java);
-
-
         // check
         findViewById<TextView>(R.id.login_button).setOnClickListener{
             val intent = Intent(this@Login, Main::class.java)
