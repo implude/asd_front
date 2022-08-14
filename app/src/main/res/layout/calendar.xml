@@ -62,84 +62,73 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/calendar_calendar_yearnmonth">
-
-                <TextView
-                    android:id="@+id/calendar_sunday"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/calendar_dayList"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="일"
-                    android:theme="@style/Text3_semibold"
-                    android:layout_marginLeft="18dp"
-                    app:layout_constraintTop_toTopOf="@id/calendar_wednesday"
-                    app:layout_constraintLeft_toLeftOf="parent" />
-
-                <TextView
-                    android:id="@+id/calendar_monday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="월"
-                    android:theme="@style/Text3_semibold"
-                    app:layout_constraintTop_toTopOf="@id/calendar_wednesday"
-                    app:layout_constraintLeft_toRightOf="@id/calendar_sunday"
-                    app:layout_constraintRight_toLeftOf="@id/calendar_tuesday" />
-
-                <TextView
-                    android:id="@+id/calendar_tuesday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="화"
-                    android:theme="@style/Text3_semibold"
-                    app:layout_constraintTop_toTopOf="@id/calendar_wednesday"
-                    app:layout_constraintLeft_toRightOf="@id/calendar_monday"
-                    app:layout_constraintRight_toLeftOf="@id/calendar_wednesday" />
-
-                <TextView
-                    android:id="@+id/calendar_wednesday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="수"
-                    android:theme="@style/Text3_semibold"
-                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toRightOf="@id/calendar_tuesday"
-                    app:layout_constraintRight_toLeftOf="@id/calendar_thursday" />
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="18dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="일"
+                        android:theme="@style/Text3_semibold"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="월"
+                        android:theme="@style/Text3_semibold"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="화"
+                        android:theme="@style/Text3_semibold"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="수"
+                        android:theme="@style/Text3_semibold"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="목"
+                        android:theme="@style/Text3_semibold"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="금"
+                        android:theme="@style/Text3_semibold"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="토"
+                        android:theme="@style/Text3_semibold"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </LinearLayout>
 
-                <TextView
-                    android:id="@+id/calendar_thursday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="목"
-                    android:theme="@style/Text3_semibold"
-                    app:layout_constraintTop_toTopOf="@id/calendar_wednesday"
-                    app:layout_constraintLeft_toRightOf="@id/calendar_wednesday"
-                    app:layout_constraintRight_toLeftOf="@id/calendar_friday" />
-
-                <TextView
-                    android:id="@+id/calendar_friday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="금"
-                    android:theme="@style/Text3_semibold"
-                    app:layout_constraintTop_toTopOf="@id/calendar_wednesday"
-                    app:layout_constraintLeft_toRightOf="@id/calendar_thursday"
-                    app:layout_constraintRight_toLeftOf="@id/calendar_saturday" />
-
-                <TextView
-                    android:id="@+id/calendar_saturday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="토"
-                    android:theme="@style/Text3_semibold"
-                    android:layout_marginRight="18dp"
-                    app:layout_constraintTop_toTopOf="@id/calendar_wednesday"
-                    app:layout_constraintRight_toRightOf="parent" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/calendar_recyclerview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    app:layout_constraintTop_toBottomOf="@id/calendar_wednesday" />
+                    android:layout_marginHorizontal="18dp"
+                    app:layout_constraintTop_toBottomOf="@id/calendar_dayList"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
