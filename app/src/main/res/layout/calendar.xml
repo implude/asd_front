@@ -161,13 +161,15 @@
                 android:id="@+id/recycleradd"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:text="추가하기 + "
                 android:textColor="@color/gray2"
-                app:layout_constraintWidth_percent="0.9"
-                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
                 app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recyclerView"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintWidth_percent="0.9" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

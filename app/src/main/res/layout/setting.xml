@@ -102,15 +102,17 @@
         app:layout_constraintTop_toBottomOf="@id/setting_userinfo"
         app:layout_constraintBottom_toTopOf="@id/clearContainer"
         app:layout_constraintWidth_percent="0.9" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clearContainer"
         android:layout_width="0dp"
-        app:layout_constraintWidth_percent="0.9"
         android:layout_height="200dp"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/setting_navigation_bar"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/setting_button"
-        app:layout_constraintBottom_toTopOf="@id/setting_navigation_bar"/>
+        app:layout_constraintWidth_percent="0.9" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/setting_navigation_bar"
