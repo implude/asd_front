@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Background">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.69"
+        app:layout_constraintWidth_percent="0.83"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/find_id">
+
+
+        <TextView
+            android:id="@+id/find_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디찾기"
+            android:theme="@style/Text4_bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingTop="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/find_id_title_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/main_icon"
+            app:layout_constraintHeight_percent="0.16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/find_id_title"
+            app:layout_constraintWidth_percent="0.46"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/find_id_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintHeight_percent="0.08"
+            android:theme="@style/Text5_light"
+            app:layout_constraintTop_toBottomOf="@+id/find_id_title_img"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/find_id_tel"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#CC7F92A4"
+            android:hint="이름"/>
+
+        <EditText
+            android:id="@+id/find_id_tel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CC7F92A4"
+            android:hint="전화번호"
+            android:theme="@style/Text5_light"
+            app:layout_constraintBottom_toTopOf="@+id/find_id_identify_code"
+            app:layout_constraintHeight_percent="0.08"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/find_id_name"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <EditText
+            android:id="@+id/find_id_identify_code"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintHeight_percent="0.08"
+            android:theme="@style/Text5_light"
+            app:layout_constraintTop_toBottomOf="@id/find_id_tel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/find_id_button"
+            android:backgroundTint="#CC7F92A4"
+            android:hint="인증번호"/>
+
+        <Button
+            android:id="@+id/find_id_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/find_id_identify_code"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="인증번호 요청하기"
+            android:background="@drawable/find_id_button"
+            android:textColor="@color/True_white"
+            style="@style/Text4_bold"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
