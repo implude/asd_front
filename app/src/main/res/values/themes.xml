@@ -1,0 +1,166 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Asd" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue2</item>
+        <item name="colorPrimaryVariant">@color/blue1</item>
+        <item name="colorOnPrimary">@color/True_black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue2</item>
+        <item name="colorSecondaryVariant">@color/blue2</item>
+        <item name="colorOnSecondary">@color/True_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+        <!-- Customize your theme here. -->
+
+<!--    Font Styles-->
+    <style name="Text1_bold">
+        <item name="fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.024</item>
+    </style>
+    <style name="Text1_light">
+        <item name="fontFamily">@font/pretendard_light</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.024</item>
+    </style>
+    <style name="Text1_semibold">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.024</item>
+    </style>
+    <style name="Text1_regular">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.024</item>
+    </style>
+    <style name="Text2_bold">
+        <item name="fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.022</item>
+    </style>
+    <style name="Text2_light">
+        <item name="fontFamily">@font/pretendard_light</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.022</item>
+    </style>
+    <style name="Text2_semibold">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.022</item>
+    </style>
+    <style name="Text2_regular">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.022</item>
+    </style>
+    <style name="Text3_bold">
+        <item name="fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.018</item>
+    </style>
+    <style name="Text3_light">
+        <item name="fontFamily">@font/pretendard_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.018</item>
+    </style>
+    <style name="Text3_semibold">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.018</item>
+    </style>
+    <style name="Text3_regular">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.018</item>
+    </style>
+    <style name="Text4_bold">
+        <item name="fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.016</item>
+    </style>
+    <style name="Text4_light">
+        <item name="fontFamily">@font/pretendard_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.016</item>
+    </style>
+    <style name="Text4_semibold">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.016</item>
+    </style>
+    <style name="Text4_regular">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.016</item>
+    </style>
+    <style name="Text5_bold">
+        <item name="fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.012</item>
+    </style>
+    <style name="Text5_light">
+        <item name="fontFamily">@font/pretendard_light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.012</item>
+    </style>
+    <style name="Text5_semibold">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.012</item>
+    </style>
+    <style name="Text5_regular">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.012</item>
+    </style>
+    <style name="Text6_bold">
+        <item name="fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+    <style name="Text6_light">
+        <item name="fontFamily">@font/pretendard_light</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+    <style name="Text6_semibold">
+        <item name="fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+    <style name="Text6_regular">
+        <item name="fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+<!--    Font Styles-->
+
+</resources>

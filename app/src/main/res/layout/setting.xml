@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Background">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting_userinfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/setting_button">
+        <TextView
+            android:id="@+id/setting_userinfo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인정보"
+            android:theme="@style/Text4_semibold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/setting_userinfo_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_management"
+            app:layout_constraintTop_toBottomOf="@id/setting_userinfo_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <EditText
+                android:id="@+id/setting_userinfo_name"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/setting_userinfo_age"
+                android:hint="이름"/>
+            <EditText
+                android:id="@+id/setting_userinfo_age"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/setting_userinfo_name"
+                app:layout_constraintBottom_toTopOf="@id/setting_userinfo_gender"
+                android:hint="나이"/>
+            <EditText
+                android:id="@+id/setting_userinfo_gender"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/setting_userinfo_age"
+                app:layout_constraintBottom_toTopOf="@id/setting_userinfo_code"
+                android:hint="성별"/>
+            <EditText
+                android:id="@+id/setting_userinfo_code"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/setting_userinfo_gender"
+                app:layout_constraintBottom_toTopOf="@id/setting_userinfo_school"
+                android:hint="스피커 고유번호"/>
+            <EditText
+                android:id="@+id/setting_userinfo_school"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/setting_userinfo_code"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:hint="학교"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/setting_userinfo"
+        android:backgroundTint="@color/main_blue"
+        android:text="수정하기"
+        android:textColor="@color/True_white"
+        android:theme="@style/Text4_bold"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_userinfo"
+        app:layout_constraintBottom_toTopOf="@id/clearContainer"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clearContainer"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@id/setting_navigation_bar"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_button"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting_navigation_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/navigation_bar"
+        android:elevation="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clearContainer"
+        app:layout_constraintWidth_percent="0.9">
+
+        <ImageButton
+            android:id="@+id/navigation_bar_book"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:background="@drawable/calendar"
+            android:backgroundTint="@color/gray4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/navigation_bar_home"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/navigation_bar_home"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:background="@drawable/home"
+            android:backgroundTint="@color/gray4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/navigation_bar_book"
+            app:layout_constraintRight_toLeftOf="@id/navigation_bar_info"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/navigation_bar_info"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:background="@drawable/setting"
+            android:backgroundTint="@color/main_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/navigation_bar_home"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

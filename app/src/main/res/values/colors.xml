@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Background">#F5F5F8</color>
+    <color name="True_black">#000000</color>
+    <color name="True_white">#FFFFFF</color>
+    <color name="True_red">#FF0000</color>
+    <color name="True_blue">#0000FF</color>
+    <color name="True_green">#00FF00</color>
+    <color name="True_yellow">#FFFF00</color>
+    <color name="main_blue">#1C85E8</color>
+    <color name="button_blue">#2D5DD8</color>
+    <color name="dark_blue">#061B2E</color>
+    <color name="green">#2CC8A7</color>
+    <color name="yellow">#FFC259</color>
+    <color name="pink">#FF8082</color>
+    <color name="blue1">#03487F</color>
+    <color name="blue2">#006CC1</color>
+    <color name="blue3">#0087F0</color>
+    <color name="blue4">#65B7F7</color>
+    <color name="blue5">#D9EEFE</color>
+    <color name="blue6">#ECF6FF</color>
+    <color name="gray1">#526475</color>
+    <color name="gray2">#7F92A4</color>
+    <color name="gray3">#D8E3E7</color>
+    <color name="gray4">#E9EEF5</color>
+    <color name="gray5">#F6F9FC</color>
+</resources>
