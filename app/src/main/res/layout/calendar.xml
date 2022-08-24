@@ -147,35 +147,44 @@
             app:layout_constraintTop_toBottomOf="@+id/calendar_calendar"
             app:layout_constraintBottom_toTopOf="@+id/calendar_navigation_bar">
 
-<!--            <androidx.recyclerview.widget.RecyclerView-->
-<!--                android:id="@+id/recyclerView"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="0dp"-->
-<!--                app:layout_constraintRight_toRightOf="parent"-->
-<!--                app:layout_constraintLeft_toLeftOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintBottom_toTopOf="@id/recycleradd"-->
-<!--                app:layout_constraintWidth_percent="0.9"-->
-<!--                app:layout_constraintHeight_percent="0.6" />-->
-            <TextView
-                android:id="@+id/asdf"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="fdasfdsadfa"/>
-
-            <TextView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/recycleradd"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.6"
+                tools:listitem="@layout/item_todo" />
+            <EditText
                 android:id="@+id/recycleradd"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="추가하기 + "
+                android:theme="@style/Text4_semibold"
+                android:hint="할 일 입력하기"
                 android:textColor="@color/gray2"
+                android:layout_marginLeft="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.486"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/add_button"
                 app:layout_constraintTop_toBottomOf="@+id/recyclerView"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.7" />
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/True_white"
+                android:textColor="@color/True_black"
+                android:theme="@style/Text4_semibold"
+                android:text="추가"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/recycleradd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recyclerView"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

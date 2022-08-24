@@ -41,6 +41,7 @@ class CalendarAdapter(private val dayList: ArrayList<String>):
         holder.dayText.text = dayList[holder.adapterPosition]
 
         holder.itemView.setOnClickListener{
+            Log.e("fasfd", todayDate)
         }
 
     }
