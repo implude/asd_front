@@ -14,10 +14,6 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.core.content.ContextCompat.startActivity
-import io.socket.client.IO
-import io.socket.client.Socket
-import io.socket.client.Socket.EVENT_CONNECT
-import io.socket.emitter.Emitter
 import java.net.URISyntaxException
 
 

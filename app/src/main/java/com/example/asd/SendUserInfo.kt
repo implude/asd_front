@@ -23,5 +23,4 @@ interface SendUserInfo {
         @Field("uuid") uuid: String,
         @Field("school") school: String,
     ): Call<get_message>
-
 }

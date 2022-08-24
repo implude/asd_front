@@ -41,7 +41,9 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/setting_userinfo_age"
-                android:hint="이름"/>
+                android:hint="이름"
+                android:maxLines="1"
+                android:inputType="textPersonName"/>
             <EditText
                 android:id="@+id/setting_userinfo_age"
                 android:layout_width="0dp"
@@ -51,7 +53,9 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/setting_userinfo_name"
                 app:layout_constraintBottom_toTopOf="@id/setting_userinfo_gender"
-                android:hint="나이"/>
+                android:hint="나이"
+                android:maxLength="1"
+                android:inputType="number"/>
             <EditText
                 android:id="@+id/setting_userinfo_gender"
                 android:layout_width="0dp"
@@ -61,7 +65,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/setting_userinfo_age"
                 app:layout_constraintBottom_toTopOf="@id/setting_userinfo_code"
-                android:hint="성별"/>
+                android:hint="성별" />
             <EditText
                 android:id="@+id/setting_userinfo_code"
                 android:layout_width="0dp"
